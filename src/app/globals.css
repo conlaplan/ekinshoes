@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.tabs-trigger {
+    @apply text-xs px-3;
+    @apply md:text-sm md:px-5;
+    @apply lg:text-xl lg:px-7;
+}
+
+.container-tabscontent {
+    @apply flex flex-wrap gap-5 justify-center;
+}
+
+.image-tabscontent {
+    @apply w-[300px];
+}
+
+.link-hover-footer {
+    @apply hover:text-slate-500 transition-colors duration-300 text-xs;
+}
+
+.hover-icon:hover svg {
+    color: white !important;
+}
