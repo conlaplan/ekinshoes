@@ -29,7 +29,7 @@ export default function InputForm() {
 
   return (
     <div className="flex flex-col h-screen sm:h-full sm:pb-4">
-      <div className="flex flex-col justify-center items-center h-full pt-32 lg:pt-40">
+      <div className="flex flex-col justify-center items-center h-full md:pt-10">
         <div className="mt-0 mb-5 text-center">
           <h1 className="text-3xl font-bold mb-3 md:mb-5">ĐĂNG KÝ</h1>
           <p className="text-xs">Xin điền thông tin vào các ô dưới đây</p>

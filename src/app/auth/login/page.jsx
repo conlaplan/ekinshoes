@@ -26,7 +26,7 @@ export default function InputForm() {
 
   return (
     <div className="flex flex-col h-screen pb-10 lg:pb-0">
-      <div className="flex flex-col justify-center items-center h-full pt-24 lg:pt-40">
+      <div className="flex flex-col justify-center items-center h-full">
         <div className="mt-0 mb-10 md:mb-15 text-center">
           <h1 className="text-3xl font-bold mb-3 md:mb-5">ĐĂNG NHẬP</h1>
           <p className="text-xs">Vui lòng nhập tài khoản email và mật khẩu của bạn</p>

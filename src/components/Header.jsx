@@ -59,7 +59,7 @@ const brands = [
 
 export function Header() {
     return (
-        <header className="bg-white shadow-sm px-2 fixed top-0 left-0 right-0 z-50">
+        <header className="bg-white shadow-sm px-2 top-0 left-0 right-0 z-50 sticky">
             <div className="flex items-center p-2 container justify-between">
                 <div className="items-center pl-5 hidden md:flex">
                     <Search />
@@ -74,14 +74,14 @@ export function Header() {
                                 <NavigationMenuItem>
                                     <Link href="/" legacyBehavior passHref>
                                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                            Trang chủ
+                                            <div className="transition-transform duration-300 transform hover:scale-105">Trang chủ</div>
                                         </NavigationMenuLink>
                                     </Link>
                                 </NavigationMenuItem>
 
                                 {/* Thương hiệu */}
                                 <NavigationMenuItem>
-                                    <NavigationMenuTrigger><Link href="/shoes/brands">Thương hiệu</Link></NavigationMenuTrigger>
+                                    <NavigationMenuTrigger><Link href="/shoes/brands" className="transition-transform duration-300 transform hover:scale-105">Thương hiệu</Link></NavigationMenuTrigger>
                                     <NavigationMenuContent>
                                         <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-3 lg:w-[600px] bg-white">
                                             {brands.map((component) => (
@@ -102,7 +102,7 @@ export function Header() {
                                 <NavigationMenuItem>
                                     <Link href="/shoes/men" legacyBehavior passHref>
                                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                            Giày nam
+                                            <div className="transition-transform duration-300 transform hover:scale-105">Giày nam</div>
                                         </NavigationMenuLink>
                                     </Link>
                                 </NavigationMenuItem>
@@ -111,7 +111,7 @@ export function Header() {
                                 <NavigationMenuItem>
                                     <Link href="/shoes/women" legacyBehavior passHref>
                                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                            Giày nữ
+                                            <div className="transition-transform duration-300 transform hover:scale-105">Giày nữ</div>
                                         </NavigationMenuLink>
                                     </Link>
                                 </NavigationMenuItem>
@@ -120,7 +120,7 @@ export function Header() {
                                 <NavigationMenuItem>
                                     <Link href="/contact" legacyBehavior passHref>
                                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                            Liên hệ
+                                            <div className="transition-transform duration-300 transform hover:scale-105">Liên hệ</div>
                                         </NavigationMenuLink>
                                     </Link>
                                 </NavigationMenuItem>
